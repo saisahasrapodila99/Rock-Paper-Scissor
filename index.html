@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front - RPS</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#1E1B4B;
+            font-family:Arial, Helvetica, sans-serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:20px;
+        }
+
+        h1{
+            color:#F8FAFC;
+            text-align:center;
+            margin-bottom:40px;
+            font-size:35px;
+        }
+
+        .middle{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:50px;
+            align-items:center;
+        }
+
+        .photo{
+            width:100%;
+            max-width:400px;
+            height:auto;
+            display:block;
+            margin:auto;
+            border-radius:15px;
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+        .play{
+            width:180px;
+            height:60px;
+            background:#3B82F6;
+            color:white;
+            border:none;
+            border-radius:35px;
+            font-size:26px;
+            cursor:pointer;
+            transition:0.3s;
+            box-shadow:0 8px 20px rgba(0,0,0,0.3);
+            display:block;
+            margin:auto;
+        }
+
+        .play:hover{
+            background:#2563EB;
+            transform:scale(1.05);
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:28px;
+                margin-bottom:25px;
+            }
+
+            .middle{
+                grid-template-columns:1fr;
+                gap:25px;
+            }
+
+            .photo{
+                max-width:300px;
+            }
+
+            .play{
+                width:160px;
+                height:55px;
+                font-size:22px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Play Rock Paper Scissors with Computer</h1>
+
+        <div class="middle">
+
+            <img class="photo" src="rps1.jpg">
+
+            <a href="10-rps.html">
+                <button class="play">Play</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
